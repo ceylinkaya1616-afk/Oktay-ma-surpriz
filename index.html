@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sana ❤️</title>
+<style>
+body {
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(145deg,#f5d7c0,#a66b52,#633d35);
+  font-family:Georgia,serif;
+  color:#59392f;
+  padding:20px;
+  box-sizing:border-box;
+}
+.card {
+  background:#fff6eb;
+  padding:35px 22px;
+  border-radius:25px;
+  text-align:center;
+  max-width:520px;
+  width:100%;
+  box-shadow:0 10px 35px #44251e66;
+}
+h1 {font-weight:normal;}
+p {line-height:1.8;}
+button {
+  background:#92543f;
+  color:white;
+  border:0;
+  padding:14px 25px;
+  border-radius:30px;
+  font-size:17px;
+  margin-top:15px;
+}
+#poem {
+  display:none;
+  line-height:2;
+  font-size:17px;
+  margin-top:25px;
+  white-space:pre-line;
+  animation:fade 2s;
+}
+@keyframes fade {
+  from {opacity:0;transform:translateY(15px);}
+  to {opacity:1;transform:translateY(0);}
+}
+.heart {font-size:30px;color:#a64d45;}
+</style>
+</head>
+<body>
+<div class="card">
+  <div>🍂 ♡ 🍂</div>
+  <h1>Oktay, sana küçük bir sürprizim var...</h1>
+  <p>Kalbimden gelen birkaç satırı senin için sakladım.</p>
+  <button onclick="openLetter()">Sürprizi aç ❤️</button>
+
+  <div id="poem">
+Bir sonbahar günündeki sıcak esinti gibiydi gözlerin.
+Sen bilmezsin, ben seni her saniye özlerim.
+Günlerden ilkbahar, senin en sevdiğin mevsim.
+Ben sonbaharda bile seninle yaşarım baharı, sevgilim.
+
+Kahverengi gözlerinde kaybolur bütün kederim,
+Görmeden sevdim ben senin o güzel kalbini, bilirim.
+Bir sıcak rüzgâr gibi geçtin ömrümün içinden,
+Şimdi her duamda bir ömür geçiyor seninle yeniden.
+
+    <p>İyi ki varsın sevgilim. ❤️</p>
+    <div class="heart">♥</div>
+  </div>
+</div>
+
+<script>
+function openLetter() {
+ document.getElementById("poem").style.display="block";
+}
+</script>
+</body>
+</html>
